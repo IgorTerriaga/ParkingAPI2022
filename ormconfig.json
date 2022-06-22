@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "database": "bd_parking",
+    "username": "postgres",
+    "password": "123456",
+    "migrations": [
+        "src/database/migrations/*.ts"
+    ],
+    "entities": [
+        "src/entities/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/database/migrations",
+        "entitiesDir": "src/entities"
+    }
+}
